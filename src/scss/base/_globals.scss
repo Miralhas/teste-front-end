@@ -12,3 +12,19 @@ h2,
 h3 {
   line-height: 1.1;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.icon {
+  stroke: currentColor;
+  fill: none;
+}

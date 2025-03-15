@@ -1,0 +1,35 @@
+.header-top {
+  display: none;
+
+  @media screen {
+    @media (width >=768px) {
+      display: flex;
+      width: 100%;
+      max-width: 764px;
+      height: 20px;
+      justify-content: space-around;
+      margin: 8px auto;
+
+      .information-group {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+
+        img {
+          height: 1rem;
+          width: 1rem;
+        }
+
+        p {
+          font-size: var(--fs-200);
+          font-weight: var(--fs-normal);
+        }
+      }
+    }
+
+    @media (width >=1024px) {
+      justify-content: space-between;
+    }
+  }
+}
