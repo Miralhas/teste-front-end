@@ -19,7 +19,7 @@ const Icon = ({ name, height = 20, width = 20 }: IconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="icon"
-          style={{ width, height }}
+          style={{ width, height, stroke: "currentcolor" }}
           dangerouslySetInnerHTML={{__html: icon.svg}}
         />
       </>

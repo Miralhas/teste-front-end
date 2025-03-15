@@ -1,10 +1,12 @@
-import Header from "../../components/header";
+import CategoriesDisplay from "../../components/categories-display";
+import HeroBanner from "../../components/hero-banner";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-    </>
+    <main>
+      <HeroBanner />
+      <CategoriesDisplay />
+    </main>
   )
 }
 
