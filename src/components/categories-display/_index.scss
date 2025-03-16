@@ -1,6 +1,5 @@
 .categories-display {
   width: 100%;
-  max-width: 1160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,9 +50,4 @@
     }
   }
 
-  @media screen {
-    @media (width > 1440px) {
-      max-width: 1500px;
-    }
-  }
 }

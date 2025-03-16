@@ -3,7 +3,7 @@ import useSelected from "../../hooks/useSelected";
 import Carousel from "../carousel";
 import CategoriesFilter from "./categories-filter";
 import Button from "../button";
-import PRODUCTS_DATA from "../../../public/data/products.json";
+import PRODUCTS_DATA from "../../data/products.json";
 import { formatToBRL } from "../../lib/utils";
 
 const RelatedProducts = ({ filter = false }: { filter?: boolean }) => {
@@ -19,7 +19,7 @@ const RelatedProducts = ({ filter = false }: { filter?: boolean }) => {
 
   return (
     <Layout>
-      <p>ver todos</p>
+      <a className="see-all" href="#">Ver todos</a>
     </Layout>
   )
 }

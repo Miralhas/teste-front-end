@@ -2,9 +2,17 @@
 
 .related-products {
   width: 100%;
-  height: 1000px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5.625rem;
+
+  .see-all {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-350);
+    text-align: center;
+    color: var(--clr-black);
+    margin-block: .75rem;
+  }
 
   h2 {
     width: 100%;

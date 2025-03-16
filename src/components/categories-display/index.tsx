@@ -13,7 +13,7 @@ const CATEGORIES: Category[] = [
 ];
 
 const CategoriesDisplay = () => {
-  const { selected, handleSelected } = useSelected();
+  const { selected, handleSelected } = useSelected("tecnologia");
 
   return (
     <section className="categories-display">

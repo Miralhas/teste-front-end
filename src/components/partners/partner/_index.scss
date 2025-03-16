@@ -1,0 +1,41 @@
+.partner {
+  position: relative;
+  background: linear-gradient(0deg, #000000, rgba(0, 0, 0, 0) 60%), url("/images/partners.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  padding: 2.5rem 2.75rem;
+
+  .banner-content {
+    color: var(--clr-white);
+
+    h3 {
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-800);
+      margin: 0;
+    }
+
+    p {
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-400);
+      max-width: 200px;
+    }
+
+    .btn-yellow {
+      width: 100%;
+      max-width: 145px;
+      font-weight: var(--fw-bold);
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen {
+    @media (width > 768px) {
+      height: 350px;
+    }
+  }
+}
