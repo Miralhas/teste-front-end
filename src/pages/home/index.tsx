@@ -6,10 +6,10 @@ import RelatedProducts from "../../components/related-products";
 const Home = () => {
   return (
     <main>
-      <HeroBanner />
       <Container>
+        <HeroBanner />
         <CategoriesDisplay />
-        <RelatedProducts />
+        <RelatedProducts filter/>
       </Container>
     </main>
   )

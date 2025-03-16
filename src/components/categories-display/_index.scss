@@ -1,6 +1,6 @@
 .categories-display {
   width: 100%;
-  // max-width: 1160px;
+  max-width: 1160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +26,11 @@
       border-radius: 8px;
       background-color: var(--clr-card-bg);
 
+      &:hover,
+      &:focus {
+        background-color: var(--clr-white);
+      }
+
       &-selected {
         color: var(--clr-blue);
         background-color: var(--clr-white);
@@ -43,6 +48,12 @@
       color: var(--clr-blue);
       font-weight: var(--fw-semibold);
       background-color: var(--clr-white);
+    }
+  }
+
+  @media screen {
+    @media (width > 1440px) {
+      max-width: 1500px;
     }
   }
 }

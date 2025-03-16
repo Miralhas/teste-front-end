@@ -22,3 +22,22 @@ a {
 ul {
   list-style-type: none;
 }
+
+
+.card {
+  padding: 1rem;
+  box-shadow: 0 0 8px var(--clr-gray);
+  border-radius: 8px;
+
+  .card-img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 228px;
+    // margin-top: 32px;
+  }
+
+  .card-content {}
+
+  .card-footer {}
+
+}

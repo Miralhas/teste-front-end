@@ -1,0 +1,25 @@
+.categories-filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin-inline: auto;
+  
+  .btn-transparent {
+    padding: 0rem;
+    border-radius: 0px;
+    font-size: var(--fs-400);
+    width: 100%;
+    max-width: 214px;
+    text-transform: uppercase;
+    height: 40px;
+
+    &:hover {
+      color: var(--clr-blue);
+      font-weight: var(--fw-bold);
+      transform: none;
+    }
+  }
+
+}

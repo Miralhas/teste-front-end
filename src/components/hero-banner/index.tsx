@@ -6,7 +6,7 @@ const HeroBanner = () => {
       <div className="gradient">
         <h2>Venha conhecer nossas promoções</h2>
         <p><span>50% Off</span> nos produtos </p>
-        <Button className="btn-yellow">Ver produto</Button>
+        <Button className="btn-yellow btn-scale">Ver produto</Button>
       </div>
     </section>
   )

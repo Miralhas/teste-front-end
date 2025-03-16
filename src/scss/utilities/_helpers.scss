@@ -8,3 +8,15 @@
   color: var(--clr-blue);
   font-weight: var(--fw-semibold);
 }
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+
+.shadow {
+  box-shadow: 0 0 8px var(--clr-gray);
+}

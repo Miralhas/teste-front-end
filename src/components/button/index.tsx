@@ -1,8 +1,11 @@
-import { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 
-const Button = ({ className, children }: PropsWithChildren<{className?: string}>) => {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+const Button = (props: PropsWithChildren<ButtonProps>) => {
+  const { className, children, ...rest } = props;
   return (
-    <button className={`btn ${className ? className : ""}`}>
+    <button className={`btn ${className ? className : ""}`} {...rest}>
       {children}
     </button>
   )
