@@ -93,5 +93,12 @@
         max-width: 630px;
       }
     }
+
+    @media (width >= 1024px) {
+      .searchbar {
+        width: 50%;
+        flex-wrap: nowrap;
+      }
+    }
   }
 }

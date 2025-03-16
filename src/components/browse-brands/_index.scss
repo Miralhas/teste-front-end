@@ -7,6 +7,15 @@
   margin-bottom: 5rem;
   gap: 2.625rem;
 
+  h3 {
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--clr-blue);
+    font-size: var(--fs-675);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2rem;
+  }
+
   .brand {
     width: 211px;
     height: 211px;
