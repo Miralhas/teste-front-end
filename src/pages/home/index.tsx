@@ -1,3 +1,4 @@
+import BrowseBrands from "../../components/browse-brands";
 import CategoriesDisplay from "../../components/categories-display";
 import Container from "../../components/container";
 import HeroBanner from "../../components/hero-banner";
@@ -14,7 +15,7 @@ const Home = () => {
         <Partners />
         <RelatedProducts />
         <Partners />
-        
+        <BrowseBrands />
         <RelatedProducts />
       </Container>
     </main>
