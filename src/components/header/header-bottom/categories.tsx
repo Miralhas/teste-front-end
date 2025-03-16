@@ -1,4 +1,4 @@
-import { useState } from "react";
+import useSelected from "../../../hooks/useSelected";
 import { Category } from "../../../types/categories";
 import Icon from "../../icons/icon";
 
@@ -11,12 +11,7 @@ const CATEGORIES: Category[] = [
 ]
 
 const Categories = () => {
-  const [selected, setSelected] = useState<null | string>(null);
-
-  const handleSelected = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
-    const id = e.currentTarget.id;
-    setSelected(prev => prev === id ? null : id);
-  }
+  const { selected, handleSelected } = useSelected();
 
   return (
     <ul className="header-bottom">

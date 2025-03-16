@@ -5,16 +5,16 @@ const SearchbarLinks = () => {
     <>
       <div className="links">
         <a href="#" className="link">
-          <Icon name="group" width={26} height={26} />
+          <Icon name="group" width={32} height={32} />
         </a>
         <a href="#" className="link">
-          <Icon name="heart" width={26} height={26} />
+          <Icon name="heart" width={32} height={32} />
         </a>
         <a href="#" className="link">
-          <Icon name="userCircle" width={26} height={26} />
+          <Icon name="userCircle" width={32} height={32} />
         </a>
         <a href="#" className="link">
-          <Icon name="shoppingCart" width={26} height={26} />
+          <Icon name="shoppingCart" width={32} height={32} />
         </a>
       </div>
     </>
