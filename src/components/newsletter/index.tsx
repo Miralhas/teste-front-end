@@ -16,7 +16,7 @@ const Newsletter = () => {
         </Button>
         <div className="form-checkbox">
           <input type="checkbox" id="terms-and-conditions" />
-          <label htmlFor="terms-and-conditions" >Aceito os termos e condições</label>
+          <label htmlFor="terms-and-conditions">Aceito os termos e condições</label>
         </div>
       </form>
     </section>

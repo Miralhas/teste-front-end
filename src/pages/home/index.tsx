@@ -1,6 +1,7 @@
 import BrowseBrands from "../../components/browse-brands";
 import CategoriesDisplay from "../../components/categories-display";
 import Container from "../../components/container";
+import Footer from "../../components/footer";
 import HeroBanner from "../../components/hero-banner";
 import Newsletter from "../../components/newsletter";
 import Partners from "../../components/partners";
@@ -18,8 +19,9 @@ const Home = () => {
         <Partners />
         <BrowseBrands />
         <RelatedProducts />
-        <Newsletter />
       </Container>
+      <Newsletter />
+      <Footer />
     </main>
   )
 }

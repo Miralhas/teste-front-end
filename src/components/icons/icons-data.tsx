@@ -228,7 +228,7 @@ export const ICONS: Icon[] = [
   },
   {
     name: "fitness",
-    svg:`
+    svg: `
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 62 61"
     preserveAspectRatio="xMidYMid meet">
@@ -308,7 +308,36 @@ export const ICONS: Icon[] = [
       </svg>
 
     `
+  },
+  {
+    name: "instagram",
+    svg: `
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.5 2.5H7.5C4.73858 2.5 2.5 4.73858 2.5 7.5V17.5C2.5 20.2614 4.73858 22.5 7.5 22.5H17.5C20.2614 22.5 22.5 20.2614 22.5 17.5V7.5C22.5 4.73858 20.2614 2.5 17.5 2.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5 11.8701C16.6234 12.7023 16.4812 13.5523 16.0937 14.2991C15.7062 15.0459 15.0931 15.6515 14.3416 16.0297C13.5901 16.408 12.7384 16.5397 11.9077 16.406C11.0771 16.2723 10.3097 15.8801 9.71479 15.2852C9.11987 14.6903 8.72768 13.9229 8.59402 13.0923C8.46035 12.2616 8.59202 11.41 8.97028 10.6584C9.34854 9.90691 9.95414 9.2938 10.7009 8.9063C11.4477 8.5188 12.2977 8.37665 13.13 8.50006C13.9789 8.62594 14.7648 9.02152 15.3716 9.62836C15.9785 10.2352 16.3741 11.0211 16.5 11.8701Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18 7H18.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `
+  },
+  {
+    name: "facebook",
+    svg: `
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.5 2.5H15.5C14.1739 2.5 12.9021 3.02678 11.9645 3.96447C11.0268 4.90215 10.5 6.17392 10.5 7.5V10.5H7.5V14.5H10.5V22.5H14.5V14.5H17.5L18.5 10.5H14.5V7.5C14.5 7.23478 14.6054 6.98043 14.7929 6.79289C14.9804 6.60536 15.2348 6.5 15.5 6.5H18.5V2.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `
+  },
+  {
+    name: "linkedin",
+    svg: `
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.5 8.5C18.0913 8.5 19.6174 9.13214 20.7426 10.2574C21.8679 11.3826 22.5 12.9087 22.5 14.5V21.5H18.5V14.5C18.5 13.9696 18.2893 13.4609 17.9142 13.0858C17.5391 12.7107 17.0304 12.5 16.5 12.5C15.9696 12.5 15.4609 12.7107 15.0858 13.0858C14.7107 13.4609 14.5 13.9696 14.5 14.5V21.5H10.5V14.5C10.5 12.9087 11.1321 11.3826 12.2574 10.2574C13.3826 9.13214 14.9087 8.5 16.5 8.5V8.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.5 9.5H2.5V21.5H6.5V9.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4.5 6.5C5.60457 6.5 6.5 5.60457 6.5 4.5C6.5 3.39543 5.60457 2.5 4.5 2.5C3.39543 2.5 2.5 3.39543 2.5 4.5C2.5 5.60457 3.39543 6.5 4.5 6.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `
   }
+
 
 
 
