@@ -37,6 +37,12 @@
     flex-direction: column;
     width: 100%;
     max-width: 304px;
+    cursor: pointer;
+    transition: 100ms all ease-in;
+
+    &:hover, &:focus {
+      transform: scale(1.01);
+    }
 
     .card-content {
 

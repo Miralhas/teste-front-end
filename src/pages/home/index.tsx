@@ -8,6 +8,7 @@ import Partners from "../../components/partners";
 import RelatedProducts from "../../components/related-products";
 
 const Home = () => {
+
   return (
     <main>
       <HeroBanner />
