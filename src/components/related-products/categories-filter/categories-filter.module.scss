@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   margin-inline: auto;
   
-  .btn-transparent {
+  .filter-btn {
     padding: 0rem;
     border-radius: 0px;
     font-size: var(--fs-400);
@@ -13,12 +13,11 @@
     max-width: 214px;
     text-transform: uppercase;
     height: 40px;
-
+  
     &:hover {
       color: var(--clr-blue);
       font-weight: var(--fw-bold);
       transform: none;
     }
   }
-
 }

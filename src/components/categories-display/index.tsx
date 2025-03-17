@@ -1,6 +1,8 @@
 import useSelected from "../../hooks/useSelected";
 import { Category } from "../../types/categories";
-import Icon from "../icons/icon";
+import Icon from "../ui/icons/icon";
+import styles from "./categories-display.module.scss";
+import classNames from "classnames";
 
 const CATEGORIES: Category[] = [
   { title: "tecnologia", icon: "devices" },
@@ -16,15 +18,18 @@ const CategoriesDisplay = () => {
   const { selected, handleSelected } = useSelected("tecnologia");
 
   return (
-    <section className="categories-display">
-      {CATEGORIES.map(category => (
-        <div className={`category`} id={category.title} key={category.title} onClick={handleSelected}>
-          <a className={`card ${category.title === selected ? "card-selected" : ""}`} href="#">
-            <Icon name={category.icon ?? "checkShield"} width={61} height={61} />
-          </a>
-          <p className={`${category.title === selected ? "text-highlight" : ""}`}>{category.title}</p>
-        </div>
-      ))}
+    <section className={styles["categories-display"]}>
+      {CATEGORIES.map(category => {
+        const isSelected = category.title === selected;
+        return (
+          <div className={styles["category"]} id={category.title} key={category.title} onClick={handleSelected}>
+            <a className={`${styles["display-card"]} ${isSelected && styles["display-card-selected"]}`} href="#">
+              <Icon name={category.icon ?? "checkShield"} width={61} height={61} />
+            </a>
+            <p className={classNames({"text-highlight": isSelected})}>{category.title}</p>
+          </div>
+        )
+      })}
     </section>
   )
 }

@@ -1,12 +1,13 @@
-import Button from "../../button";
+import Button from "../../ui/button";
+import style from "./partner.module.scss";
 
 const Partner = () => {
   return (
-    <div className="partner">
-      <div className="banner-content">
+    <div className={style["partner"]}>
+      <div className={style["banner-content"]}>
         <h3>Parceiros</h3>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
-        <Button className="btn-yellow btn-scale">Confira</Button>
+        <Button className={`${style["banner-btn"]} btn-yellow btn-scale`}>Confira</Button>
       </div>
     </div>
   )

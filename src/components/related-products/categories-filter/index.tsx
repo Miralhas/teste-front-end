@@ -1,5 +1,7 @@
 import { Category } from "../../../types/categories";
-import Button from "../../button";
+import Button from "../../ui/button";
+import styles from "./categories-filter.module.scss";
+import classNames from "classnames";
 
 const CATEGORIES: Category[] = [
   { title: "celular" },
@@ -7,7 +9,7 @@ const CATEGORIES: Category[] = [
   { title: "tablets" },
   { title: "notebooks" },
   { title: "tvs" },
-  { title: "ver todos"}
+  { title: "ver todos" }
 ];
 
 type CategoriesFilterProps = {
@@ -16,18 +18,23 @@ type CategoriesFilterProps = {
 }
 
 const CategoriesFilter = ({ handleSelected, selected }: CategoriesFilterProps) => {
+
   return (
-    <div className="categories-filter">
-      {CATEGORIES.map(category => (
-        <Button
-          key={category.title}
-          onClick={handleSelected}
-          id={category.title}
-          className={`btn-transparent ${selected === category.title ? "text-highlight bold" : undefined}`}
-        >
-          {category.title}
-        </Button>
-      ))}
+    <div className={styles["categories-filter"]}>
+      {CATEGORIES.map(category => {
+        const isSelected = selected === category.title;
+        return (
+          <Button
+            key={category.title}
+            onClick={handleSelected}
+            id={category.title}
+            // className={`${styles["filter-btn"]} ${btnClass}`}
+            className={`${classNames(styles["filter-btn"], { bold: isSelected, "text-highlight": isSelected, "btn-transparent": true})}`}
+          >
+            {category.title}
+          </Button>
+        )
+      })}
     </div>
   )
 }

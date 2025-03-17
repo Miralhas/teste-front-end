@@ -1,5 +1,5 @@
 import { PropsWithChildren, useEffect } from "react";
-import { useModalContext } from "../../contexts/modal-context";
+import { useModalContext } from "../../../contexts/modal-context";
 import Icon from "../icons/icon";
 
 const Modal = ({ children }: PropsWithChildren) => {

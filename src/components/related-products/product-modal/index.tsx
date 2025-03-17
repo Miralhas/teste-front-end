@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { formatToBRL } from "../../../lib/utils";
 import { Product } from "../../../types/product";
-import Button from "../../button";
-import Modal from "../../modal";
+import Button from "../../ui/button";
+import styles from "./product-modal.module.scss";
+import Modal from "../../ui/modal";
 
 const ProductModal = ({ product }: { product: Product }) => {
   const [count, setCount] = useState(1);
@@ -18,20 +19,20 @@ const ProductModal = ({ product }: { product: Product }) => {
 
   return (
     <Modal>
-      <div className="product-modal">
-        <img src={product.photo} alt="" className="product-image" />
-        <div className="product-info">
-          <div className="product-details">
+      <div className={styles["product-modal"]}>
+        <img src={product.photo} alt="" className={styles["product-image"]} />
+        <div className={styles["product-info"]}>
+          <div className={styles["product-details"]}>
             <h3>{product.productName}</h3>
-            <p className="product-price">R$ {formatToBRL(product.price)}</p>
-            <p className="product-description">{product.descriptionShort}</p>
-            <a href="#" className="see-more">Veja mais detalhes do produto {">"} </a>
+            <p className={styles["product-price"]}>R$ {formatToBRL(product.price)}</p>
+            <p className={styles["product-description"]}>{product.descriptionShort}</p>
+            <a href="#" className={styles["see-more"]}>Veja mais detalhes do produto {">"} </a>
           </div>
-          <div className="product-buttons">
-            <div className="product-quantity">
-              <Button className="btn-transparent" onClick={handleCountMinus}>-</Button>
-              <span className="count">{count}</span>
-              <Button className="btn-transparent" onClick={handleCountPlus}>+</Button>
+          <div className={styles["product-buttons"]}>
+            <div className={styles["product-quantity"]}>
+              <Button className={`${styles["quantity-btn"]} btn-transparent`} onClick={handleCountMinus}>-</Button>
+              <span className={styles["count"]}>{count}</span>
+              <Button className={`${styles["quantity-btn"]} btn-transparent`} onClick={handleCountPlus}>+</Button>
             </div>
             <Button className="btn-yellow btn-scale">Comprar</Button>
           </div>

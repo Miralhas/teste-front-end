@@ -1,4 +1,4 @@
-import { AvailiableIcons } from "../../types/icon";
+import { AvailiableIcons } from "../../../types/icon";
 import { ICONS } from "./icons-data"
 
 type IconProps = {

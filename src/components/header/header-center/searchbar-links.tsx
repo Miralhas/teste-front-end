@@ -1,19 +1,20 @@
-import Icon from "../../icons/icon";
+import Icon from "../../ui/icons/icon";
+import styles from "./header-center.module.scss";
 
 const SearchbarLinks = () => {
   return (
     <>
-      <div className="links">
-        <a href="#" className="link">
+      <div className={styles["links"]}>
+        <a href="#" className={styles["link"]}>
           <Icon name="group" width={32} height={32} />
         </a>
-        <a href="#" className="link">
+        <a href="#" className={styles["link"]}>
           <Icon name="heart" width={32} height={32} />
         </a>
-        <a href="#" className="link">
+        <a href="#" className={styles["link"]}>
           <Icon name="userCircle" width={32} height={32} />
         </a>
-        <a href="#" className="link">
+        <a href="#" className={styles["link"]}>
           <Icon name="shoppingCart" width={32} height={32} />
         </a>
       </div>
