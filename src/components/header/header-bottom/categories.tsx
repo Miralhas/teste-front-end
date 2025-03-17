@@ -16,7 +16,7 @@ const Categories = () => {
   const { selected, handleSelected } = useSelected();
 
   return (
-    <ul className={styles["header-bottom"]}>
+    <ul className={styles["header__bottom"]}>
       <HeaderCategory category={{ title: "todas categorias" }} selected={selected} handleSelected={handleSelected} />
       {CATEGORIES.map((category, index) => (
         <HeaderCategory category={category} key={index} selected={selected} handleSelected={handleSelected} />
@@ -36,7 +36,7 @@ const HeaderCategory = ({ category, selected, handleSelected }: HeaderCategoryPr
   const isSelected = category.title === selected;
   return (
     <li id={category.title} onClick={handleSelected}>
-      <a className={classNames(styles["header-category"], { "text-highlight": isSelected })} href="#">
+      <a className={classNames(styles["header__bottom__category"], { "text-highlight": isSelected })} href="#">
         {category.icon ? (
           <Icon name={category.icon} width={20} height={20} />
         ) : null}

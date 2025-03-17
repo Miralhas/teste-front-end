@@ -7,7 +7,7 @@
   margin-bottom: 5rem;
   gap: 2.625rem;
 
-  h3 {
+  &__title {
     flex: 0 0 100%;
     text-align: center;
     color: var(--clr-blue);
@@ -16,32 +16,32 @@
     margin-bottom: 2rem;
   }
 
-  .brand {
-    width: 211px;
-    height: 211px;
-    border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5.5rem 3rem;
-    transition: 100ms all ease-in;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
   @media screen {
     @media (width >= 768px) {
-      h3{
+      &__title{
         font-size: var(--fs-675);
       }
     }
+  }
+}
+
+.brand {
+  width: 211px;
+  height: 211px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.5rem 3rem;
+  transition: 100ms all ease-in;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }

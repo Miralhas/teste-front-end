@@ -22,7 +22,26 @@
   gap: 1.25rem;
   background-color: #fff;
 
-  p {
+  &__card {
+    @extend .card;
+  
+    padding: 2rem;
+    box-shadow: 0 0 8px var(--clr-gray);
+    border-radius: 8px;
+    background-color: var(--clr-card-bg);
+  
+    &:hover,
+    &:focus {
+      background-color: var(--clr-white);
+    }
+  
+    &-selected {
+      color: var(--clr-blue);
+      background-color: var(--clr-white);
+    }
+  }
+
+  &__name {
     margin: 0;
     text-transform: capitalize;
     font-size: var(--fs-300);
@@ -32,25 +51,6 @@
   &:focus {
     color: var(--clr-blue);
     font-weight: var(--fw-semibold);
-    background-color: var(--clr-white);
-  }
-}
-
-.display-card {
-  @extend .card;
-
-  padding: 2rem;
-  box-shadow: 0 0 8px var(--clr-gray);
-  border-radius: 8px;
-  background-color: var(--clr-card-bg);
-
-  &:hover,
-  &:focus {
-    background-color: var(--clr-white);
-  }
-
-  &-selected {
-    color: var(--clr-blue);
     background-color: var(--clr-white);
   }
 }

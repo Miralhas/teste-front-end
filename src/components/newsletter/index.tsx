@@ -1,4 +1,5 @@
 import Button from "../ui/button";
+import InputText from "../ui/input-text";
 import styles from "./newsletter.module.scss";
 
 const Newsletter = () => {
@@ -11,8 +12,8 @@ const Newsletter = () => {
 
       <form className={styles["newsletter-subscribe"]}>
         <div className={styles["newsletter-subscribe-upper"]}>
-          <input type="text" placeholder="Digite seu nome" />
-          <input type="text" placeholder="Digite seu e-mail" />
+          <InputText className={styles["newsletter-subscribe-upper__input"]} placeholder="Digite seu nome" />
+          <InputText className={styles["newsletter-subscribe-upper__input"]} placeholder="Digite seu e-mail" />
           <Button className={`${styles["newsletter-btn"]} btn-yellow btn-scale bold`}>
             Inscrever
           </Button>

@@ -1,4 +1,4 @@
-.header-bottom {
+.header__bottom {
   display: none;
 
   @media screen {
@@ -12,7 +12,7 @@
       height: 40px;
     }
 
-    .header-category {
+    &__category {
       display: flex;
       gap: 12px;
       text-transform: uppercase;

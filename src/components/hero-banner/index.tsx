@@ -7,7 +7,7 @@ const HeroBanner = () => {
       <div className={styles["gradient"]}>
         <h2>Venha conhecer nossas promoções</h2>
         <p><span>50% Off</span> nos produtos </p>
-        <Button className={`${styles["hero-btn"]} btn-yellow btn-scale`}>Ver produto</Button>
+        <Button className={`${styles["hero-banner__btn"]} btn-yellow btn-scale`}>Ver produto</Button>
       </div>
     </section>
   )

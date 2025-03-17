@@ -6,6 +6,13 @@
   margin-inline: auto;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__btn {
+    align-self: self-start;
+    width: 100%;
+    max-width: 206px;
+    font-weight: var(--fw-semibold);
+  }
 }
 
 .gradient {
@@ -13,7 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0) 85%);
   height: 100%;
 
@@ -38,7 +45,7 @@
   }
 
   @media screen {
-    @media (width >= 768px) {
+    @media (width >=768px) {
       padding: 5rem;
 
       h2 {
@@ -46,15 +53,8 @@
       }
 
       p {
-        font-size: var(--fs-700); 
+        font-size: var(--fs-700);
       }
     }
   }
-}
-
-.hero-btn {
-  align-self: self-start;
-  width: 100%;
-  max-width: 206px;
-  font-weight: var(--fw-semibold);
 }
