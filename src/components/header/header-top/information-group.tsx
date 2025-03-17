@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { AvailiableIcons } from "../../../types/icon";
-import Icon from "../../icons/icon";
+import Icon from "../../ui/icons/icon";
+import styles from "./header-top.module.scss";
 
 type InformationGroupProps = {
   icon: AvailiableIcons,
@@ -8,7 +9,7 @@ type InformationGroupProps = {
 
 const InformationGroup = ({ icon, children }: PropsWithChildren<InformationGroupProps>) => {
   return (
-    <div className="information-group">
+    <div className={styles["information-group"]}>
       <Icon name={icon} height={20} width={20} />
       {children}
     </div>

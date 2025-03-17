@@ -1,0 +1,10 @@
+.input-text {
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: none;
+  
+  &::placeholder {
+    font-size: var(--fs-200);
+    color: var(--clr-gray);
+  }
+}

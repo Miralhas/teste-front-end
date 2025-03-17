@@ -1,13 +1,14 @@
-import Icon from "../icons/icon";
+import Icon from "../ui/icons/icon";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
     <footer>
-      <section className="footer-content">
-        <div className="our-brand">
+      <section className={styles["footer-content"]}>
+        <div className={styles["our-brand"]}>
           <img src="/images/logo.png" alt="" />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div className="footer-icons">
+          <div className={styles["footer-icons"]}>
             <a href="#" className="btn-scale">
               <Icon name="instagram" width={24} height={24} />
             </a>
@@ -19,20 +20,20 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="info-groups">
-          <div className="group">
+        <div className={styles["info-groups"]}>
+          <div className={styles["group"]}>
             <h4>Institucional</h4>
             <a>Sobre Nós</a>
             <a>Movimento</a>
             <a>Trabalhe conosco</a>
           </div>
-          <div className="group">
+          <div className={styles["group"]}>
             <h4>Ajuda</h4>
             <a>Suporte</a>
             <a>Fale Conosco</a>
             <a>Perguntas Frequentes</a>
           </div>
-          <div className="group">
+          <div className={styles["group"]}>
             <h4>Termos</h4>
             <a>Termos e Condições</a>
             <a>Política de Privacidade</a>
@@ -40,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="copyright">
+      <div className={styles["copyright"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </div>
     </footer>

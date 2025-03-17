@@ -1,4 +1,4 @@
-import { Icon } from "../../types/icon";
+import { Icon } from "../../../types/icon";
 
 export const ICONS: Icon[] = [
   {

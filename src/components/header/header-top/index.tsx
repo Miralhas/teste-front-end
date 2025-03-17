@@ -1,8 +1,10 @@
+import styles from "./header-top.module.scss";
+
 import InformationGroup from "./information-group";
 
 const HeaderTop = () => {
   return (
-    <section className="header-top">
+    <section className={styles["header-top"]}>
       <InformationGroup icon={"checkShield"}>
         <p>Compra <span className="text-highlight">100% segura</span></p>
       </InformationGroup>

@@ -1,4 +1,4 @@
-.header-center {
+.header__center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -22,11 +22,9 @@
     }
   }
 
-
   .searchbar {
     position: relative;
     width: 100%;
-    // max-width: 630px;
     transition: all 100ms ease-in-out;
     order: 2;
 
