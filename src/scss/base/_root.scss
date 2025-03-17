@@ -3,6 +3,7 @@
 :root {
   --ff-primary: "Poppins", sans-serif;
   --ff-secondary: "Outfit", sans-serif;
+  --ff-work: "Work Sans", sans-serif;
 
   @each $key, $value in $font-sizes {
     --fs-#{$key}: #{$value};
