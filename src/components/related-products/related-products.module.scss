@@ -1,0 +1,120 @@
+@use "../../scss/base/globals" as *;
+@use "../ui/button" as *;
+
+.related-products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5.625rem;
+
+  .see-all {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-350);
+    width: fit-content;
+    margin-inline: auto;
+    color: var(--clr-black);
+    margin-block: .75rem;
+    transition: 100ms all ease-in-out;
+
+    &:hover, &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      width: 80%;
+      text-align: center;
+      border-bottom: 1px solid #DEDEDE;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: var(--clr-blue);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-500);
+  
+      span {
+        background-color: var(--clr-white);
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media screen {
+    @media (width >=768px) {
+      h2 {
+        font-size: var(--fs-675);
+      }
+    }
+  }
+}
+
+
+.card {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 304px;
+  cursor: pointer;
+  transition: 100ms all ease-in;
+
+  &:hover, &:focus {
+    transform: scale(1.01);
+  }
+
+  .card-content {
+
+    p {
+      margin: 0;
+      font-weight: var(--fw-light);
+      color: var(--clr-black);
+    }
+
+    .product-name {
+      font-size: var(--fs-350);
+    }
+
+    .product-description {
+      font-size: var(--fs-200);
+      margin-bottom: .75rem;
+    }
+
+    .product-price {
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-400);
+      color: var(--clr-gray);
+      text-decoration: line-through;
+    }
+
+    .product-price-discount {
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-500);
+    }
+
+    .product-payment-method {
+      font-size: var(--fs-200);
+      font-weight: var(--fw-regular);
+    }
+
+    .product-shipping {
+      font-size: var(--fs-200);
+      font-weight: var(--fw-regular);
+      color: var(--clr-blue);
+      margin-top: .25rem;
+    }
+  }
+
+  .card-footer {
+    margin-top: auto;
+
+    .btn {
+      width: 100%;
+      height: 44px;
+      text-transform: uppercase;
+      font-size: var(--fs-300);
+    }
+  }
+}

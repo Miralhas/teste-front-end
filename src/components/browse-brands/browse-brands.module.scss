@@ -1,0 +1,47 @@
+.browse-brands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  gap: 2.625rem;
+
+  &__title {
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--clr-blue);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2rem;
+  }
+
+  @media screen {
+    @media (width >= 768px) {
+      &__title{
+        font-size: var(--fs-675);
+      }
+    }
+  }
+}
+
+.brand {
+  width: 211px;
+  height: 211px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.5rem 3rem;
+  transition: 100ms all ease-in;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

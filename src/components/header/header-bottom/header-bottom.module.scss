@@ -1,0 +1,29 @@
+.header__bottom {
+  display: none;
+
+  @media screen {
+    @media (width >= 768px) {
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 0 0 8px var(--clr-gray);
+      height: 40px;
+    }
+
+    &__category {
+      display: flex;
+      gap: 12px;
+      text-transform: uppercase;
+      font-weight: var(--fw-semibold);
+      font-size: var(--fs-200);
+      
+      &:hover,
+      &:focus {
+        color: var(--clr-blue);
+      }
+    }
+  
+  }
+}

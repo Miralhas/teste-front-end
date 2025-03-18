@@ -1,0 +1,14 @@
+.partners-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  @media screen {
+    @media (width > 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

@@ -1,15 +1,19 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Header from "./components/header";
+import Home from "./pages/home";
+import { ModalProvider } from "./contexts/modal-context";
+
+const queryClient = new QueryClient();
 
 const App = () => {
+
   return (
-    <main className='container'>
-      <header>
-        <section className="header-top">
-          <div className="information-group">
-            <p>Compra <span className="text-highlight">100% segura</span></p>
-          </div>
-        </section>
-      </header>
-    </main>
+    <QueryClientProvider client={queryClient}>
+      <ModalProvider>
+        <Header />
+        <Home />
+      </ModalProvider>
+    </QueryClientProvider>
   )
 }
 

@@ -1,0 +1,78 @@
+.embla {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+
+  .embla__viewport {
+    width: 80%;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+
+  .embla__container {
+    display: flex;
+    // margin-left: 1rem;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .embla__next,
+  .embla__prev {
+    background-color: transparent;
+    color: var(--clr-black);
+    position: absolute;
+    padding: 0px 8px;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-card-bg);
+    }
+  }
+
+  .embla__prev {
+    top: 50%;
+    left: 0;
+  }
+
+  .embla__next {
+    top: 50%;
+    right: 0;
+  }
+
+  @media screen {
+
+    @media (width >=768px) {
+      .embla__viewport {
+        width: 90%;
+      }
+
+      .embla__slide {
+        flex: 0 0 50%;
+      }
+    }
+
+    @media (width >=1024px) {
+      .embla__viewport {
+        width: 95%;
+      }
+
+      .embla__slide {
+        flex: 0 0 34%;
+      }
+    }
+
+    @media (width >=1440px) {
+      .embla__slide {
+        flex: 0 0 25%;
+      }
+    }
+  }
+}
