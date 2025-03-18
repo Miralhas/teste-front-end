@@ -36,7 +36,7 @@ const HeaderCategory = ({ category, selected, handleSelected }: HeaderCategoryPr
   const isSelected = category.title === selected;
   return (
     <li id={category.title} onClick={handleSelected}>
-      <a className={classNames(styles["header__bottom__category"], { "text-highlight": isSelected })} href="#">
+      <a className={classNames(styles["header__bottom__category"], { "text-highlight": isSelected })} href="#/">
         {category.icon ? (
           <Icon name={category.icon} width={20} height={20} />
         ) : null}

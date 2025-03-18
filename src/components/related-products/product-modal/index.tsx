@@ -26,7 +26,7 @@ const ProductModal = ({ product }: { product: Product }) => {
             <h3>{product.productName}</h3>
             <p className={styles["product-price"]}>R$ {formatToBRL(product.price)}</p>
             <p className={styles["product-description"]}>{product.descriptionShort}</p>
-            <a href="#" className={styles["see-more"]}>Veja mais detalhes do produto {">"} </a>
+            <a href="#/" className={styles["see-more"]}>Veja mais detalhes do produto {">"} </a>
           </div>
           <div className={styles["product-buttons"]}>
             <div className={styles["product-quantity"]}>

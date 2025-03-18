@@ -9,13 +9,13 @@ const Footer = () => {
           <img src="/images/logo.png" alt="" />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className={styles["footer-icons"]}>
-            <a href="#" className="btn-scale">
+            <a href="#/" className="btn-scale">
               <Icon name="instagram" width={24} height={24} />
             </a>
-            <a href="#" className="btn-scale">
+            <a href="#/" className="btn-scale">
               <Icon name="facebook" width={24} height={24} />
             </a>
-            <a href="#" className="btn-scale">
+            <a href="#/" className="btn-scale">
               <Icon name="linkedin" width={24} height={24} />
             </a>
           </div>

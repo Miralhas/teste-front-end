@@ -23,7 +23,7 @@ const RelatedProducts = ({ filter = false }: { filter?: boolean }) => {
 
   return (
     <Layout>
-      <a className={styles["see-all"]} href="#">Ver todos</a>
+      <a className={styles["see-all"]} href="#/">Ver todos</a>
     </Layout>
   )
 }
@@ -43,7 +43,9 @@ const Layout = ({ children }: PropsWithChildren) => {
   return (
     <section>
       <div className={styles["related-products"]}>
-        <h2><span>Produtos Relacionados</span></h2>
+        <div className={styles["related-products__title"]}>
+          <h2><span>Produtos Relacionados</span></h2>
+        </div>
         {children}
         <Carousel>
           {products?.map((product, index) => (
