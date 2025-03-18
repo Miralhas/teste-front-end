@@ -18,7 +18,7 @@
 
 2.  **Navegue até o diretório do projeto.**
     ```bash
-    cd e-commerce-uol
+    cd teste-front-end
     ```
 
 3. I**nstale as dependências.**
