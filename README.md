@@ -1,31 +1,37 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End
 
-### Vem ser #Econverse!
+## Sobre o Projeto
 
-Segue abaixo as instruções para a execução do teste.
+> O projeto consiste no desenvolvimento de um website eCommerce, utilizando as tecnologias Rect, Typescript e SCSS.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## Como rodar o projeto localmente
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+### Requisitos
+- **Node.js**
+- **Gerenciador de pacotes Node.js de sua preferência.** *(npm, pnpm, yarn)*
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+### Para instalar e rodar esse projeto de forma local, siga os seguintes passos:
+1. **Clone o repositório na sua máquina.**
+    ```bash
+    git clone https://github.com/Miralhas/teste-front-end
+    ```
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+2.  **Navegue até o diretório do projeto.**
+    ```bash
+    cd e-commerce-uol
+    ```
 
-**Boa sorte! ;)**
+3. I**nstale as dependências.**
+    ```bash
+    npm install
+    ```
+
+4. **Iniciar o projeto em modo de desenvolvimento.**
+    ```bash
+    npm run dev
+    ```
+
+5. **Acessar o website no seu navegador.**
+    ```
+    http://localhost:5173/
+    ```
