@@ -9,12 +9,12 @@ const ProductModal = ({ product }: { product: Product }) => {
   const [count, setCount] = useState(1);
 
   const handleCountPlus = () => {
-    setCount(prev => prev+1); 
+    setCount(prev => prev + 1);
   }
 
   const handleCountMinus = () => {
     if (count <= 1) return;
-    setCount(prev => prev-1); 
+    setCount(prev => prev - 1);
   }
 
   return (
@@ -22,19 +22,21 @@ const ProductModal = ({ product }: { product: Product }) => {
       <div className={styles["product-modal"]}>
         <img src={product.photo} alt="" className={styles["product-image"]} />
         <div className={styles["product-info"]}>
-          <div className={styles["product-details"]}>
-            <h3>{product.productName}</h3>
-            <p className={styles["product-price"]}>R$ {formatToBRL(product.price)}</p>
-            <p className={styles["product-description"]}>{product.descriptionShort}</p>
-            <a href="#/" className={styles["see-more"]}>Veja mais detalhes do produto {">"} </a>
+            <div>
+              <h3>{product.productName}</h3>
+              <p className={styles["product-price"]}>R$ {formatToBRL(product.price)}</p>
+            </div>
+            <div>
+              <p className={styles["product-description"]}>{product.descriptionShort}</p>
+              <a href="#/" className={styles["see-more"]}>Veja mais detalhes do produto {">"} </a>
           </div>
           <div className={styles["product-buttons"]}>
             <div className={styles["product-quantity"]}>
-              <Button className={`${styles["quantity-btn"]} btn-transparent`} onClick={handleCountMinus}>-</Button>
+              <Button className={`${styles["btn"]} ${styles["btn-transparent"]}`} onClick={handleCountMinus}>-</Button>
               <span className={styles["count"]}>{count}</span>
-              <Button className={`${styles["quantity-btn"]} btn-transparent`} onClick={handleCountPlus}>+</Button>
+              <Button className={`${styles["btn"]} ${styles["btn-transparent"]}`} onClick={handleCountPlus}>+</Button>
             </div>
-            <Button className="btn-yellow btn-scale">Comprar</Button>
+            <Button className={`${styles["btn"]} ${styles["btn-yellow"]} btn-scale`}>Comprar</Button>
           </div>
         </div>
       </div>

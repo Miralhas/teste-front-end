@@ -50,7 +50,7 @@ const Layout = ({ children }: PropsWithChildren) => {
         <Carousel>
           {products?.map((product, index) => (
             <div className="embla__slide" key={index}>
-              <div className={styles["product-card"]} onClick={() => toggleModalAndProduct(product)}>
+              <div className={styles["card"]} onClick={() => toggleModalAndProduct(product)}>
                 <img src={product.photo} className={styles["card-img"]} alt={product.productName + " image"} />
                 <div className={styles["card-content"]}>
                   <p className={styles["product-name"]}>{product.productName}</p>
@@ -61,7 +61,7 @@ const Layout = ({ children }: PropsWithChildren) => {
                   <p className={styles["product-shipping"]}>Frete grátis</p>
                 </div>
                 <div className={styles["card-footer"]}>
-                  <Button className={`${styles["product-buy-btn"]} btn-blue btn-scale bold`}>comprar</Button>
+                  <Button className={`${styles["btn"]} btn-blue btn-scale bold`}>comprar</Button>
                 </div>
               </div>
             </div>

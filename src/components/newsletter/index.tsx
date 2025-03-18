@@ -14,7 +14,7 @@ const Newsletter = () => {
         <div className={styles["newsletter-subscribe-upper"]}>
           <InputText className={styles["newsletter-subscribe-upper__input"]} placeholder="Digite seu nome" />
           <InputText className={styles["newsletter-subscribe-upper__input"]} placeholder="Digite seu e-mail" />
-          <Button className={`${styles["newsletter-btn"]} btn-yellow btn-scale bold`}>
+          <Button className={`${styles["btn"]} btn-yellow btn-scale bold`}>
             Inscrever
           </Button>
         </div>

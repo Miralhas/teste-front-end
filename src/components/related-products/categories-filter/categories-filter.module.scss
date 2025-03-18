@@ -1,3 +1,5 @@
+@use "../../ui/button" as *;
+
 .categories-filter {
   width: 100%;
   display: flex;
@@ -5,7 +7,7 @@
   flex-wrap: wrap;
   margin-inline: auto;
   
-  .filter-btn {
+  .btn {
     padding: 0rem;
     border-radius: 0px;
     font-size: var(--fs-400);

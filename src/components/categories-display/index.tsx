@@ -23,7 +23,7 @@ const CategoriesDisplay = () => {
         const isSelected = category.title === selected;
         return (
           <div className={styles["category"]} id={category.title} key={category.title} onClick={handleSelected}>
-            <a className={`${styles["category__card"]} ${isSelected && styles["category__card-selected"]}`} href="#/">
+            <a className={`${styles["card"]} ${isSelected && styles["card-selected"]}`} href="#/">
               <Icon name={category.icon ?? "checkShield"} width={61} height={61} />
             </a>
             <p className={classNames(styles["category__name"], { "text-highlight": isSelected })}>{category.title}</p>

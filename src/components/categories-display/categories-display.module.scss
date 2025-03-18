@@ -1,4 +1,4 @@
-@use "../../scss/base/globals";
+@use "../../scss/base/globals" as *;
 
 .categories-display {
   width: 100%;
@@ -22,9 +22,7 @@
   gap: 1.25rem;
   background-color: #fff;
 
-  &__card {
-    @extend .card;
-  
+  .card {
     padding: 2rem;
     box-shadow: 0 0 8px var(--clr-gray);
     border-radius: 8px;

@@ -7,7 +7,7 @@ const Partner = () => {
       <div className={style["banner-content"]}>
         <h3>Parceiros</h3>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
-        <Button className={`${style["banner-btn"]} btn-yellow btn-scale`}>Confira</Button>
+        <Button className={`${style["btn"]} btn-yellow btn-scale`}>Confira</Button>
       </div>
     </div>
   )

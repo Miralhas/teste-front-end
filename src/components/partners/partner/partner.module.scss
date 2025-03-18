@@ -1,3 +1,5 @@
+@use "../../ui/button" as *;
+
 .partner {
   background: linear-gradient(0deg, #000000, rgba(0, 0, 0, 0) 60%), url("/images/partners.png");
   background-repeat: no-repeat;
@@ -24,7 +26,7 @@
       max-width: 200px;
     }
 
-    .banner-btn {
+    .btn {
       width: 100%;
       max-width: 145px;
       font-weight: var(--fw-bold);

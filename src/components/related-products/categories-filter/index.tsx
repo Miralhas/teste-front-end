@@ -28,8 +28,7 @@ const CategoriesFilter = ({ handleSelected, selected }: CategoriesFilterProps) =
             key={category.title}
             onClick={handleSelected}
             id={category.title}
-            // className={`${styles["filter-btn"]} ${btnClass}`}
-            className={`${classNames(styles["filter-btn"], { bold: isSelected, "text-highlight": isSelected, "btn-transparent": true})}`}
+            className={`${classNames(styles["btn"], "btn-transparent", { "bold": isSelected, "text-highlight": isSelected })}`}
           >
             {category.title}
           </Button>
