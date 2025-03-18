@@ -71,15 +71,16 @@
   .btn {
     border: none;
     padding: 0;
-    width: 36px;
     height: 36px;
+    width: 100%;
 
     &-yellow {
       width: 188px;
     }
 
     &-transparent {
-
+      
+      max-width: 36px;
       &:hover,
       &:focus {
         color: var(--clr-blue);
@@ -95,7 +96,8 @@
     width: 110px;
 
     .count {
-      width: 36px;
+      width: 100%;
+      max-width: 36px;
       display: inline-block;
       text-align: center;
     }

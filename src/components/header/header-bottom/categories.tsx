@@ -13,7 +13,7 @@ const CATEGORIES: Category[] = [
 ]
 
 const Categories = () => {
-  const { selected, handleSelected } = useSelected();
+  const { selected, handleSelected } = useSelected("ofertas do dia");
 
   return (
     <ul className={styles["header__bottom"]}>
